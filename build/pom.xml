@@ -1201,11 +1201,6 @@
                 </dependency>
 
                 <dependency>
-                    <groupId>org.jboss.narayana.blacktie</groupId>
-                    <artifactId>blacktie-stompconnect</artifactId>
-                </dependency>
-
-                <dependency>
                     <groupId>org.jboss.narayana.rts</groupId>
                     <artifactId>restat-api</artifactId>
                 </dependency>
