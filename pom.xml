@@ -1312,6 +1312,12 @@
 
             <dependency>
                 <groupId>org.wildfly</groupId>
+                <artifactId>wildfly-arjuna</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.wildfly</groupId>
                 <artifactId>wildfly-rts</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -4276,6 +4282,31 @@
             </dependency>
 
             <dependency>
+                <groupId>org.jboss.narayana.arjunacore</groupId>
+                <artifactId>arjunacore</artifactId>
+                <version>${version.org.jboss.narayana}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.jboss.byteman</groupId>
+                        <artifactId>byteman</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.jboss.byteman</groupId>
+                        <artifactId>byteman-submit</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>jfree</groupId>
+                        <artifactId>jfreechart</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>jfree</groupId>
+                        <artifactId>jcommon</artifactId>
+                    </exclusion>
+                </exclusions>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
                 <groupId>org.jboss.narayana.jts</groupId>
                 <artifactId>narayana-jts-jacorb</artifactId>
                 <version>${version.org.jboss.narayana}</version>
@@ -6176,6 +6207,7 @@
                 <property><name>!minimalistic</name></property>
             </activation>
             <modules>
+                <module>arjuna</module>
                 <module>appclient</module>
                 <module>build</module>
                 <module>build-config</module>

@@ -1052,6 +1052,10 @@
             <maven-resource group="org.wildfly" artifact="wildfly-xts"/>
         </module-def>
 
+        <module-def name="org.wildfly.extension.arjuna">
+            <maven-resource group="org.wildfly" artifact="wildfly-arjuna"/>
+        </module-def>
+
         <module-def name="org.wildfly.extension.rts">
             <maven-resource group="org.wildfly" artifact="wildfly-rts"/>
         </module-def>
@@ -1134,6 +1138,10 @@
 
         <module-def name="org.jboss.mod_cluster.core">
             <maven-resource group="org.jboss.mod_cluster" artifact="mod_cluster-core"/>
+        </module-def>
+
+        <module-def name="org.jboss.narayana.arjunacore">
+            <maven-resource group="org.jboss.narayana.arjunacore" artifact="arjunacore"/>
         </module-def>
 
         <!--
