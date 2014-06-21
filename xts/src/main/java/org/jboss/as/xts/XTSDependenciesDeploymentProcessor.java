@@ -35,12 +35,12 @@ import org.jboss.jandex.DotName;
 import org.jboss.modules.Module;
 import org.jboss.modules.ModuleIdentifier;
 import org.jboss.modules.ModuleLoader;
-import org.jboss.narayana.compensations.api.CancelOnFailure;
-import org.jboss.narayana.compensations.api.Compensatable;
-import org.jboss.narayana.compensations.api.CompensationScoped;
-import org.jboss.narayana.compensations.api.TxCompensate;
-import org.jboss.narayana.compensations.api.TxConfirm;
-import org.jboss.narayana.compensations.api.TxLogged;
+import org.jboss.narayana.compensations.cdi.api.CancelOnFailure;
+import org.jboss.narayana.compensations.cdi.api.Compensatable;
+import org.jboss.narayana.compensations.cdi.api.CompensationScoped;
+import org.jboss.narayana.compensations.cdi.api.TxCompensate;
+import org.jboss.narayana.compensations.cdi.api.TxConfirm;
+import org.jboss.narayana.compensations.cdi.api.TxLogged;
 
 import javax.ejb.TransactionAttribute;
 import javax.jws.WebService;
